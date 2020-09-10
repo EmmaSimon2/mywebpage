@@ -1,1 +1,1 @@
-I made a website! Wahoo!
+I made a webpage! Wahoo!
