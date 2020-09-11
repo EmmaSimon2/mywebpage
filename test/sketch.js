@@ -2,11 +2,11 @@
 function setup() {
   // put setup code here
   createCanvas(500,500);
-  background(200,37,149);
+  background(217,183,65);
 }
 
 function draw() {
   // put drawing code here
-  stroke(200);
-  line(100,100,20,20);
+  stroke(0);
+  line(200,100,10,20);
 }
