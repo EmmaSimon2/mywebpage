@@ -1,10 +1,11 @@
 function setup() {
   // put setup code here
-createCanvas(500,500);
-background(100,37,249);
+  createCanvas(500,500);
+  background(100,37,149);
 }
 
 function draw() {
   // put drawing code here
-line(100,100,20,20);
+  stroke(200);
+  line(100,100,20,20);
 }
