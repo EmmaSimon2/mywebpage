@@ -3,12 +3,15 @@
 let extraCanvas;
 let xpos = 900;
 let ypos = 370;
+let fr = 5;
 
 function setup() {
   // put setup code here
   createCanvas(windowWidth,windowHeight);
   extraCanvas=createGraphics(windowWidth,windowHeight);
   extraCanvas.clear();
+  frameRate(fr);
+  noStroke();
 }
 
 function draw() {
