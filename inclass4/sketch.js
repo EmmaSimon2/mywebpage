@@ -46,7 +46,7 @@ function draw() {
     }
 
     if(mouseIsPressed & dist(mouseX, mouseY, xposlist[i], yposlist[i])<80){
-      
+
     }
 
   }
