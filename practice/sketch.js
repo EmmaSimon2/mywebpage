@@ -1,67 +1,38 @@
 
-let xposlist = [100,200,300,400,500,600,700];
-let yposlist = [100,200,300,400,500,600,700];
 
-let xspeedlist = [1,10,20,25,20,10,15];
-let yspeedlist = [1,20,10,20,10,20,10];
+let img1;
+//let partImage;
 
-let mouseclickedlist = [1,1,1,1,1,1,1];
+function preload(){
+
+  img1 = loadImage('https://i.imgur.com/60QRCZy.png');
+
+}
 
 function setup() {
   // put setup code here
   createCanvas(windowWidth,windowHeight);
+//  image(img1,0,0,300,250);
+  //partImage = get(100,100,110,100);
+//  background(220,129,169);
 
 }
 
 function draw() {
   // put drawing code here
+  background(220,129,169);
+//  for(let i = 0; i < width; i = i + 110){
+//    for(let j = 0; j < height; j = j + 100){
+//      tint(random(0,255),random(0,255),random(0,255));
+//      image(partImage,i,j);
+//    }
+//  }
+  image(img1,0,0,400,400);
 
-  background(62, 76, 64);
-
-  for (let i = 0; i < xposlist.length; i = i + 1){
-
-    checkstage = checkstage + mouseclickedlist[i];
-
-    if(mouseclickedlist[i] === 1){
-      circle(xposlist[i],yposlist[i],100);
-    }
+  blend(img1,100,200,110,100,800,100,110,100,DIFFERENCE);
 
 
-    xposlist[i] = xposlist[i] + xspeedlist[i];
-    yposlist[i] = yposlist[i] + yspeedlist[i];
-
-    if(yposlist[i]>height){
-      yspeedlist[i] = -yspeedlist[i];
-      }
-
-    if(yposlist[i] < 0){
-      yspeedlist[i] = -yspeedlist[i];
-    }
-
-    if(xposlist[i]>width){
-      xspeedlist[i] = -xspeedlist[i];
-      }
-
-    if(xposlist[i] < 0){
-      xspeedlist[i] = -xspeedlist[i];
-    }
-
-    if(mouseIsPressed & dist(mouseX, mouseY, xposlist[i], yposlist[i])<50){
-      mouseclickedlist[i] = 0;
-    }
-  }
-
-  let checkstage = 0;
-  for (let j = 0; j < xposlist.length; j = j + 1){
-    checkstage = checkstage + mouseclickedlist[j];
-  }
-
-  if(checkstage === 0){
-    for (let q = 0; q < xposlist.length; q = q + 1){
-
-    }
-  }
-  console.log(checkstage);
+  //image(partImage,1000,0);
 
 
 
