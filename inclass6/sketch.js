@@ -4,7 +4,7 @@ let img;
 
 function preload(){
 
-  img = loadImage('https://i.imgur.com/60QRCZy.png');
+  img = loadImage('https://i.imgur.com/oBrveC1.png');
 
 }
 
@@ -16,10 +16,10 @@ function setup() {
 
 function draw() {
   // put drawing code here
-
   img.loadPixels();
+
   for(let x = 0; x < img.width; x = x + 1){
-    for(let y = 0; x < img.height; y = y + 1){
+    for(let y = 0; y < img.height; y = y + 1){
       let i = (x + y * img.width ) * 4;
 
       let pixr = img.pixels[i+0];
@@ -30,7 +30,6 @@ function draw() {
       if(pixr > 125){
         img.pixels[i+0] = 0;
       }
-
     }
   }
 

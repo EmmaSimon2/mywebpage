@@ -19,10 +19,7 @@ function preload(){
     cherryList[i] = loadImage('https://i.imgur.com/1e9hT8J.png');
     hoodieList[i] = loadImage('https://i.imgur.com/xSA2j6u.png');
 
-  //  xposList[i] = random(0,windowWidth);
-  //  yposList[i] = 0;
-
-  //  yspeedList[i] = random(1,20);
+  
   }
 
 

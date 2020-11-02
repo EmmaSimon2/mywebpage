@@ -1,0 +1,19 @@
+/*CSS FOR Creative Coding Assignments site*/
+
+/* COMMON */
+body {
+	background: black;
+	font-family: Verdana, Geneva, sans-serif;
+	background-color: #9896AD;
+	background-size: cover;
+	margin: 0;
+
+  text-align: center;
+  font-size: 24px;
+  color: white;
+}
+
+li.nav{
+  list-style-type: none;
+  padding-top: 17px;
+}
