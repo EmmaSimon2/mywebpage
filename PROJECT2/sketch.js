@@ -49,7 +49,7 @@ function draw() {
     let size = random(7,25);
 
     image(rings,950,150,size,size);
-    image(vase,1200,300,size,size);
+    image(vase,1200,600,size,size);
     image(lamp,700,700,size,size);
     image(gems,300,500,size,size);
   }
