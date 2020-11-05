@@ -3,17 +3,27 @@
 /* COMMON */
 body {
 	background: black;
-	font-family: Verdana, Geneva, sans-serif;
-	background-color: #9896AD;
+  font-family: 'Oswald', sans-serif;
+	background-color: #C2EBCC;
 	background-size: cover;
-	margin: 0;
+	margin-top: 100px;
 
   text-align: center;
   font-size: 24px;
-  color: white;
+  color: #2E1E5E;
 }
 
 li.nav{
   list-style-type: none;
   padding-top: 17px;
+}
+
+li.nav a{
+  text-decoration: none;
+  color: #303438;
+
+}
+
+.project{
+  font-size: 26px;
 }
