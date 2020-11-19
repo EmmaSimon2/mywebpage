@@ -1,0 +1,38 @@
+/*CSS FOR Creative Coding Assignments site*/
+
+/* COMMON */
+body {
+	background: black;
+  font-family: 'Oswald', sans-serif;
+	background-color: #E8FF60;
+	background-size: cover;
+	margin-top: 150px;
+
+  text-align: center;
+  font-size: 24px;
+  color: #2E1E5E;
+}
+
+li.nav{
+  list-style-type: none;
+	margin-left: 150px;
+	margin-top: 50px;
+  padding-top: 17px;
+
+	padding-left: 90px;
+}
+
+li.nav{
+	float: left;
+}
+
+li.nav a{
+  text-decoration: none;
+	text-align: center;
+  color: #303438;
+
+}
+
+.project{
+  font-size: 26px;
+}
