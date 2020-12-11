@@ -28,7 +28,7 @@ function setup() {
 	{
 		for(let y = -10; y < height+10; y += span)
 		{
-			p[i] = createVector(x,y);
+			c[i] = createVector(x,y);
 			i++;
 		}
 	}
@@ -43,9 +43,9 @@ function draw()
   //line color changing with each frame count
 	noStroke();
 	fill(frameCount%100,100,100);
-	for(let i = 0; i < p.length; i ++)
+	for(let i = 0; i < c.length; i ++)
 	{
-		let noiseValue = noise((p[i].x + noiseoffset.x)*noiseMul, (c[i].y + noiseoffset.y)*noiseMul);
+		let noiseValue = noise((c[i].x + noiseoffset.x)*noiseMul, (c[i].y + noiseoffset.y)*noiseMul);
 		let r = map(noiseValue,0,1,0,PI*channel);
 		c[i].add(createVector(cos(r),sin(r)));
     //size of ellipses that form lines
